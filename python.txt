@@ -1,0 +1,95 @@
+from random import choice 
+jogador=0
+pc=0
+print("Preparado para jogar? ganha quem fizer 3 pontos primeiro")
+while pc<3 and jogador<3:
+    opcoes=["Pedra", "papel","tesoura","spock", "lagarto"]
+    escolhapc = choice(opcoes) #pc
+    escolha=input("Escolha uma de suas armas: pedra, papel, tesoura,spock ou lagarto.\n")#jogador
+    if escolhapc == escolha:
+        print("deu empate!")
+        print(jogador, "a", pc)
+    if escolhapc == "tesoura" and escolha == "papel":
+        print("ganhei! eu escolhi", escolhapc)
+        pc=pc+1
+        print("placar:", jogador, "a", pc)   
+    if escolhapc == "papel" and escolha == "pedra":
+        print("ganhei! eu escolhi", escolhapc)
+        pc=pc+1
+        print("placar:", jogador, "a", pc)
+    if escolhapc == "pedra" and escolha == "lagarto":
+        print("ganhei! eu escolhi", escolhapc)
+        pc=pc+1
+        print("placar:", jogador, "a", pc)
+    if escolhapc == "lagarto" and escolha == "spock":
+        print("ganhei! eu escolhi", escolhapc)
+        pc=pc+1
+        print("placar:", jogador, "a", pc)
+    if escolhapc == "spock" and escolha == "tesoura":
+        print("ganhei! eu escolhi", escolhapc)
+        pc=pc+1
+        print("placar:", jogador, "a", pc)
+    if escolhapc == "pedra" and escolha == "tesoura":
+        print("ganhei! eu escolhi", escolhapc)
+        pc=pc+1
+        print("placar:", jogador, "a", pc)
+    if escolhapc == "tesoura" and escolha == "lagarto":
+        print("ganhei! eu escolhi", escolhapc)
+        pc=pc+1
+        print("placar:", jogador, "a", pc)
+    if escolhapc == "lagarto" and escolha == "papel":
+        print("ganhei! eu escolhi", escolhapc)
+        pc=pc+1
+        print("placar:", jogador, "a", pc)
+    if escolhapc == "papel" and escolha == "spock":
+        print("ganhei! eu escolhi", escolhapc)
+        pc=pc+1
+        print("placar:", jogador, "a", pc)
+    if escolhapc == "spock" and escolha == "pedra":
+        print("ganhei! eu escolhi", escolhapc)
+        pc=pc+1
+        print("placar:", jogador, "a", pc)
+    if escolhapc == "papel" and escolha == "tesoura":
+        print("Parabens, voce ganhou! eu escolhi", escolhapc)
+        jogador = jogador + 1
+        print("placar:", jogador, "a", pc)
+    if escolhapc == "pedra" and escolha == "papel":
+        print("Parabens, voce ganhou! eu escolhi", escolhapc)
+        jogador = jogador + 1
+        print("placar:", jogador, "a", pc)
+    if escolhapc == "lagarto" and escolha == "pedra":
+        print("Parabens, voce ganhou! eu escolhi", escolhapc)
+        jogador = jogador + 1
+        print("placar:", jogador, "a", pc)
+    if escolhapc == "spock" and escolha == "lagarto":
+        print("Parabens, voce ganhou! eu escolhi", escolhapc)
+        jogador = jogador + 1
+        print("placar:", jogador, "a", pc)
+    if escolhapc == "tesoura" and escolha == "spock":
+        print("Parabens, voce ganhou! eu escolhi", escolhapc)
+        jogador = jogador + 1
+        print("placar:", jogador, "a", pc)
+    if escolhapc == "lagarto" and escolha == "tesoura":
+        print("Parabens, voce ganhou! eu escolhi", escolhapc)
+        jogador = jogador + 1
+        print("placar:", jogador, "a", pc)
+    if escolhapc == "papel" and escolha == "lagarto":
+        print("Parabens, voce ganhou! eu escolhi", escolhapc)
+        jogador = jogador + 1
+        print("placar:", jogador, "a", pc)
+    if escolhapc == "tesoura" and escolha == "pedra":
+        print("Parabens, voce ganhou! eu escolhi", escolhapc)
+        jogador = jogador + 1
+        print("placar:", jogador, "a", pc)
+    if escolhapc == "spock" and escolha == "papel":
+        print("Parabens, voce ganhou! eu escolhi", escolhapc)
+        jogador = jogador + 1
+        print("placar:", jogador, "a", pc)
+    if escolhapc == "pedra" and escolha == "spock":
+        print("Parabens, voce ganhou! eu escolhi", escolhapc)
+        jogador = jogador + 1
+        print("placar:", jogador, "a", pc)
+if jogador == 3:
+    print("parabens!!! voce ganhou o jogo")
+if pc == 3:
+    print("HAHA eu ganhei o jogo")
